@@ -134,17 +134,20 @@
         <p class="sticky-text"> 
           However, it was started off as a open-house channel five years ago by Cash Jordan, a Manhattan-based real estate agent. 
         </p>
-
       </div>
+
       <div class="step" id="step3">
+        <p  class="sticky-text"> 
+          As most in-person showings were on pause during the height of the pandemic, Jordan used the channel as an alternative 
+          way to showcase properties in New York City.  
+        </p>
+      </div>
+      
+      <div class="step" id="step4">
         <div>
-          <p  class="sticky-text"> 
-            As most in-person showings were on pause during the height of the pandemic, Jordan used the channel as an alternative 
-            way to showcase properties. 
-          </p>
           <p  class="sticky-text">
             But now, his channel has morphed to exclusively amplyfing misleading content about how migrants and homeless people 
-            are decimiating the city.
+            are decimiating the city. 
           </p>
         </div>
       </div>
@@ -159,11 +162,11 @@
     </div>
   
     <div class="steps-container">
-      <div class="step" id="step4">
+      <div class="step" id="step5">
         <div>
           <p class="sticky-text"> 
-            Since his pviot two years ago, Jordan has doubled his following to more than 1.2 million, 
-            a number that surpasses many local TV stations on YouTube, one of the most important sources for news in the US.
+            Since the pviot, he has doubled his following to more than 1.2 million, 
+            surpassing most local TV stations on YouTube, one of the most important sources for news in the US.
           </p>
           <p class="sticky-text"> 
             “Fundamentally, this is all about the algorithm,” said one expert on online misinformation. 
@@ -186,7 +189,7 @@
     </div>
     <div class="footer">
       <div class="'content">
-      <p style="font-size: 35px;"> 
+      <p style="font-size: 20px;"> 
         You can read the full article on Cash Jordan and the phenomenon of how some content creators seeing 
         a viable business model in simply amplifying misleading narratives and reinforcing division 
           <a href="https://slate.com/technology/2025/03/cash-jordan-youtube-nyc-real-estate-right-wing-conspiracy-theories.html"> 
@@ -246,10 +249,14 @@
     })
 
     d3.select("#step3").on('stepin', (e) => {
-      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "screenshots/image3.jpg")
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "screenshots/image2.jpg")
     })
 
     d3.select("#step4").on('stepin', (e) => {
+      d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "screenshots/image3.jpg")
+    })
+
+    d3.select("#step5").on('stepin', (e) => {
       d3.select(e.target.closest(".scrolly-container")).select("img").attr("src", "viz_folder/cash_jordan_youtube_metrics.jpeg")
     })
   </script>
